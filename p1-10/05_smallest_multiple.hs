@@ -14,7 +14,6 @@
 smallestMultiple :: Int -> Int
 smallestMultiple n = foldl (*) 1 (foldableFactors n [1])
 
-
 foldableFactors :: Int -> [Int] -> [Int]
 foldableFactors n facs
   | n == length facs = facs
